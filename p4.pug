@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= json_obj.fullName
+  img.imageScr1(src=json_obj.imageURL)
+  p Country: #{json_obj.country}
+  p Playing Role: #{json_obj.playingRole}
+  br
+  p Test Matches: #{json_obj.data.batting.tests.Mat}
+  p Test Runs: #{json_obj.data.batting.tests.Runs}
+  p ODI Matches: #{json_obj.data.batting.ODIs.Mat}
+  p ODI Runs: #{json_obj.data.batting.ODIs.Runs}
+  p T20I Matches: #{json_obj.data.batting.T20Is.Mat}
+  p T20I Runs: #{json_obj.data.batting.T20Is.Runs}
+  br
+  p Profile: 
+  p #{json_obj.profile}
+  br
+  br
+  p This is deliverable B for ps4!!!
